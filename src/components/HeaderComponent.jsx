@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex items-center"
           aria-label="Home"
         >
@@ -15,53 +16,47 @@ const Header = () => {
             alt="Bintibora Logo"
             className="h-10 w-auto object-contain"
           />
-        </a>
+        </Link>
 
         {/* Navigation */}
         <div className="hidden items-center gap-8 md:flex">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="font-montserrat text-[15px] font-medium text-gray-900 transition-colors hover:text-gray-600"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="font-montserrat text-[15px] font-medium text-gray-900 transition-colors hover:text-gray-600"
           >
             About
-          </a>
-
-          <a
-            href="#programs"
+          </Link>
+         
+          <Link
+            to="/programs"
             className="font-montserrat text-[15px] font-medium text-gray-900 transition-colors hover:text-gray-600"
           >
             Programs
-          </a>
-
-          <a
-            href="#impact"
-            className="font-montserrat text-[15px] font-medium text-gray-900 transition-colors hover:text-gray-600"
-          >
-            Impact
-          </a>
-
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact  "
             className="font-montserrat text-[15px] font-medium text-gray-900 transition-colors hover:text-gray-600"
           >
             Contact
-          </a>
+          </Link>
+        
+          
         </div>
 
         {/* CTA */}
-        <a
-          href="#join"
+        <Link
+          to="/join"
           className="hidden rounded-full bg-black px-6 py-3 font-montserrat text-[15px] font-medium text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-md md:inline-flex"
         >
           Join / Partner
-        </a>
+        </Link>
 
         {/* Mobile menu button */}
         <button
