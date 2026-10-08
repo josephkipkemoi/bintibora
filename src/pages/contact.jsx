@@ -1,6 +1,6 @@
 import Footer from "../components/FooterComponent";
 import Header from "../components/HeaderComponent";
-
+import { Link } from "react-router-dom";
 const ContactPage = () => {
   return (
     <>
@@ -56,12 +56,12 @@ const ContactPage = () => {
 
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <a
-                    href="mailto:info@bintibora.com"
+                  <Link
+                    to="/mailto:info@bintibora.com"
                     className="mt-1 block font-medium transition hover:text-yellow-400"
                   >
                     info@bintibora.com
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -73,12 +73,12 @@ const ContactPage = () => {
 
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
-                  <a
-                    href="tel:+254700000000"
+                  <Link
+                    to="tel:+254700000000"
                     className="mt-1 block font-medium transition hover:text-yellow-400"
                   >
                     +254 700 000 000
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -105,37 +105,37 @@ const ContactPage = () => {
               </p>
 
               <div className="mt-4 flex gap-3">
-                <a
+                {/* <a
                   href="#"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-yellow-500"
                   aria-label="Facebook"
                 >
                   f
-                </a>
+                </a> */}
 
-                <a
+                {/* <a
                   href="#"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-yellow-500"
                   aria-label="Instagram"
                 >
                   ◎
-                </a>
+                </a> */}
 
-                <a
+                {/* <a
                   href="#"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-yellow-500"
                   aria-label="LinkedIn"
                 >
                   in
-                </a>
+                </a> */}
 
-                <a
+                {/* <a
                   href="#"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-yellow-500"
                   aria-label="X"
                 >
                   𝕏
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
